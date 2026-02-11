@@ -5,7 +5,7 @@ from pymongo.errors import PyMongoError
 
 # MongoDB Collection
 try:
-    client = MongoClient("mongodb+srv://youtubepy:MTEFBLjE-qCxQ4s@cluster0.knbctv0.mongodb.net/")
+    client = MongoClient("mongodb+srv://<username>:<password>@cluster0.knbctv0.mongodb.net/")
     db = client["ytmanager"]
     video_collection = db["videos"]
     print("Connected to MongoDB Successfully")
@@ -104,4 +104,5 @@ def main():
             print("Unexpected error occurred: ", e)
 
 if __name__ == "__main__":
+
     main()
